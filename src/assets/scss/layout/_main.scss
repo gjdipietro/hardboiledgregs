@@ -1,0 +1,12 @@
+.main {
+	  @media screen and (min-width: $bp_left_side) {
+    	float: left;
+    	max-width: $max_right;
+    	padding: 2em;
+    	width: 70%;
+  	}
+    @media screen and (min-width: $bp_full_size) and (min-height: 600px) {
+      margin-left:20em;
+      width:auto;
+    }
+}

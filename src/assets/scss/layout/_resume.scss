@@ -1,0 +1,80 @@
+
+.layout_resume article {
+	border-bottom: 1px solid $grey;
+	padding: rhythm(2) 0;
+	font-size: 85%;
+}
+
+.resume_section {
+	h2 {
+		@include adjust-font-size-to(18px);
+		color: $accent;
+	}
+}
+
+.resume_subTitle {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 0 #fff;
+	font-weight: 500;
+	font-family: $san_serif;
+	@include adjust-font-size-to(16px);
+	color: $copy_light;
+	margin-bottom: rhythm(.25);
+}
+
+.resume_contact {
+	.email, .tel {
+		margin-bottom: rhythm(.25);
+		display: block;
+		label {
+			font-weight: 700;
+		}
+	}
+}
+
+.resume_skills {
+	@include reset_ul();
+}
+.resume_skills li {
+	list-style: none;
+}
+@media screen and (min-width: 35em) {
+	.resume_skills li {
+		list-style: none;
+		float: left;
+		width: 50%;
+	}
+}
+@media screen and (min-width: 48em) {
+	.layout_resume article {
+		@include clearfix();
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.resume_section, .resume_body {
+		float: left;
+	}
+	.resume_section {
+		width: 10em;
+		margin-right: 2em;
+		text-transform: uppercase;
+	}
+	.resume_body {
+		width: 38em;
+	}
+
+	.resume_contact {
+		.email, .tel {
+			margin-right: rhythm(1);
+			margin-bottom:0;
+			display: inline;
+		}
+	}
+	.resume_skills {
+		@include reset_ul();
+	}	
+}
+
+
+

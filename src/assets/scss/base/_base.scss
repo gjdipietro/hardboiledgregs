@@ -1,0 +1,65 @@
+/* ===========================
+   Base
+   =========================== */
+* {
+  box-sizing: border-box
+}
+body {
+    background-color:#FFF;
+    background-image: url('/assets/img/curves.png');
+    background-attachment: fixed;
+    font-family: $serif;
+    color: $copy;
+}
+
+img {max-width: 100%}
+
+a {
+    color: $color_link;
+    text-decoration: none;
+    transition: color .2s ease, text-decoration .2s ease;
+    white-space: nowrap;
+    &:hover {
+        color: $color_link_hover;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+a[target='_blank'] { 
+    color: $copy_ultra_light;
+}
+
+::-moz-selection {
+    background: $accent;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: $accent;
+    color: #fff;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    @media (min-width: $bp_left_side) {
+        padding: 0;
+    }
+    @media (min-width: $max_container) {
+        max-width: $max_container;
+    }
+}
+
+
+
