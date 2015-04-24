@@ -6,9 +6,7 @@ $head = $path . "/partials/head.php";
 $criticalCSS = file_get_contents($path . "/assets/css/critical/home.css");
 include_once($head);
 ?>
-<style>
-.aboutMe, .footerWrap { display: none; }
-</style>
+
 <body>
     <div class="curtain" id="curtain"></div>
 	<div class="container" >
@@ -30,32 +28,44 @@ include_once($head);
     		      <li><a href="https://www.facebook.com/gjdipietro" title="View on Facebook" class="icon-facebook"></a></li>
     		    </ul>
                 
-                <a href="/about/" role="button" class="module_btn btn_primary" id="learnMore">More Info</a>
+                <a href="/about/" class="module_btn btn_primary" id="learnMore">More Info</a>
 
                 <div class="aboutMe">
                     <span class="closeModal" id="closeModal">X</span>
                     <div class="typographic_content">
                         <p>
-                            With over 30 billion pins to explore, it’s no wonder that Pinterest was one of the top 
-                            requested apps from our amazing community. We listened to you and it’s finally here.
-                            Now, along with your Twitter, Facebook, blog apps, and so much more, you can add your 
-                            Pinterest profile to your page and give your friends and followers a quick and easy way to 
-                            preview your latest pins.
-                        </p>
-                        
-                        <h2> Find out even more </h2>
-                        <p>
-                            Hello hiring manager, I'd love to get in touch, here is a <a href="/resume/">Resume</a>
+                            I believe the web we build should be versatile and efficient, kind of like an egg. 
+                            I'm Greg DiPietro, a web designer and front end developer. 
+                            I help to build a performant, and device agnotistic websites. 
+                            Over 5 years experience translating orginizational UX goals into best-practice reusable HTML, 
+                            CSS, and JavaScript assets. If you are interested in learning more about Work-Greg have 
+                            a look at my <a href="/resume/">resume</a>.                            
                         </p>
 
+
                         <h2> Lets get cracking </h2>
-                        <p> view some of the work i have done.</p>
+                        <p> 
+                            I'd love to share some of the interesting projects I've worked on.  
+                            I architected the front end of a <a href="/work/Guru-Profile">responsive profile and search</a> to help you find and hire Freelancers on Guru.com.  
+                            
+                            Or more recently, when I figured out what it would take to implement a <a href="/work/Guru-Manage">visual style guidelines</a> 
+                            system with reusabe design patterns for our core product. 
+
+                            Who can forget about when I helped <a href="/work/Schramm-Farms">small business</a> define their presence online. 
+
+                            Or most importanlty, when I created a never ending supply of <a href="/work/You-Could-Use-A-Drink">whiskey</a>.  
+                         
+                        </p>
+                        <p>
+                            Hope we can chat more about these projects and any others soon.
+                            <a href="http://youcoulduseadrink.com/#/drink/-JmiH202_SlerQ3qaJ5k/1">First one is on me.</a>
+                        </p>
                     </div>
                 </div>
     		</div>
 
     		<div class="main" data-role="main" id="main">
-    		    <h2>A few projects that show what I do.</h2>
+    		    <h2>A few projects I'd like to talk about.</h2>
     		  
     		    <ul class="module_grid clearfix">
     		      <li>
@@ -63,7 +73,7 @@ include_once($head);
     		          <img src="/assets/img/work/profile.png" alt="Guru.com Profile" title="Guru.com Profile" />
     		          <div class="grid_title">
     		          	<h3>Guru.com Hiring System</h3>
-    		          	<p>Design, Content Strategy</p>
+    		          	<p>Responsive Design, Content Strategy</p>
     		          </div>
     		        </a>
     		      </li>
@@ -72,7 +82,7 @@ include_once($head);
     		          <img src="/assets/img/work/manage.png" alt="Guru.com Manage" title="Guru.com Manage"/>
     		          <div class="grid_title">
     		          	<h3>Guru.com Manage System</h3>
-    		          	<p>Front end development</p>
+    		          	<p>Style guide, front end system</p>
     		          </div>
     		        </a>
     		      </li>
@@ -99,17 +109,9 @@ include_once($head);
     		</div>
         </div>
 	</div>
-    <div class="footerWrap">
-        <?php include_once($pag); ?>
-    </div>
 
-    
-
-<script type="text/javascript">
-
+<script>
 'use strict';
-
-
 var body        = document.body,
     header      = document.getElementById("header"), 
     main        = document.getElementById("main"),
@@ -126,9 +128,7 @@ function addOverlay() {
 function destroyOverlay() {
     body.className = "";
     learnMore.className = "module_btn btn_primary";
-    //overlay.remove();
 }
-
 function aboutMe(event) {
     event.preventDefault();
     if (body.className === "showTime") {
@@ -137,9 +137,7 @@ function aboutMe(event) {
         addOverlay();
     }
 }
-
-</script>
-
+</script>    
 </body>
 </html>
 

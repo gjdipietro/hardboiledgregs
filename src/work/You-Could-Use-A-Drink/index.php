@@ -35,7 +35,6 @@ include_once($head);
           same code for the selection step.  It uses a firebase backend to persist the data so all the creations you make have a shareable URL.  
         </p>
 
-        
         <h2>Relevant Skills</h2>
         <ul>
           <li>AngularJS</li>

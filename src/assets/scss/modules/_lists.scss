@@ -4,11 +4,17 @@
     
     li {
         margin-bottom: rhythm(1);
+        width: 49%;
+        float:left;
+        margin: 0 2% 2% 0;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
         a {
             background: none repeat scroll 0% 0% #FFF;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
             border-radius: 4px;
-            padding: 1em 1em 0 1em;
+            padding: 0;
             display: block;
             position: relative;
             text-decoration: none;
@@ -24,22 +30,24 @@
             border-radius: 4px;
         }
         .grid_title {
-            padding: 1em 0;
-            color: $copy_light;
-            @include adjust_font_size_to(14px);
-            p {
-                color: $copy_ultra_light;
-                font-family: $san_serif;
-                margin: 0;
-            }
+            display: none;
         }
-        @media screen and (min-width: 500px) {
-            width: 49%;
-            float:left;
-            margin: 0 2% 2% 0;
-            &:nth-child(2n){
-                margin-right: 0;
+
+        @media screen and (min-width: $bp_left_side) {
+            a {
+                padding: 1em 1em 0 1em;
             }
+            .grid_title {
+                display: block;
+                padding: 1em 0;
+                color: $copy_light;
+                @include adjust_font_size_to(14px);
+                p {
+                    color: $copy_ultra_light;
+                    font-family: $san_serif;
+                    margin: 0;
+                }
+            } 
         }
         
     }

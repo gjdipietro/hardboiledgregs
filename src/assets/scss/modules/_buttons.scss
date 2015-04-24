@@ -4,9 +4,9 @@
 	font-weight: 500;
 	transition-property: background-color;
 	transition-duration: 0.5s;
+    border: none;
 	&:hover {
     	text-decoration: none;
-		
     }
 
     &.btn_primary {

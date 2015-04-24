@@ -30,12 +30,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Greg DiPietro">
   <meta name="description" content="Greg DiPietro is a front end developer, UXer, and designer that cares about the people who use what he makes." >
-  <meta name="keywords" content="responsive web designer, mobile, web designer, UX, UI, web development, web development, information architect, content strategist, pittsburgh, pennsylvania, rwd, front end developer" >
+  <meta name="keywords" content="Responsive web designer, mobile, web designer, UX, UI, web development, web development, information architect, content strategist, pittsburgh, pennsylvania, rwd, front end developer" >
   
   <!-- Load criticla css -->
   <style> 
+    .aboutMe {opacity:0;}
     <?php 
-      echo $criticalCSS; 
+       echo $criticalCSS;
     ?> 
   </style>
 
