@@ -1,7 +1,7 @@
 
 <nav class="footer_interior" role="nav">
 	<div class="container">
-		<h4>View a project</h4>
+		<h4>Selected Work</h4>
 		<ul class="footer_interior_paginate">
 			<li>
 				<a href="/work/Guru-Profile/">

@@ -1,8 +1,8 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "css"
-sass_dir = "scss"
+css_dir = "/src/assets/css"
+sass_dir = "/src/assets/scss"
 images_dir = "img"
 javascripts_dir = "js"
 output_style = :compressed

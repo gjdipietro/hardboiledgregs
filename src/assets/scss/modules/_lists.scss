@@ -1,15 +1,8 @@
 .module_grid {
     @include reset-ul();
-	margin-bottom: rhythm(2);
-    
+    margin-bottom: rhythm(1);
     li {
         margin-bottom: rhythm(1);
-        width: 49%;
-        float:left;
-        margin: 0 2% 2% 0;
-        &:nth-child(2n){
-            margin-right: 0;
-        }
         a {
             background: none repeat scroll 0% 0% #FFF;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -32,7 +25,6 @@
         .grid_title {
             display: none;
         }
-
         @media screen and (min-width: $bp_left_side) {
             a {
                 padding: 1em 1em 0 1em;
@@ -47,10 +39,24 @@
                     font-family: $san_serif;
                     margin: 0;
                 }
+                h3 {
+                    font-size: 1rem;
+                }
             } 
         }
-        
     }
+
+    @media screen and (min-width: 27.5em) {
+        li {
+            float:left;
+            width: 48%;
+            margin: 0  rhythm(.5) rhythm(.5) 0;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 
 

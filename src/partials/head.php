@@ -34,10 +34,7 @@
   
   <!-- Load criticla css -->
   <style> 
-    .aboutMe {opacity:0;}
-    <?php 
-       echo $criticalCSS;
-    ?> 
+    <?php echo $criticalCSS; ?> 
   </style>
 
   <!-- fonts -->

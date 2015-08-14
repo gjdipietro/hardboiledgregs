@@ -22,8 +22,10 @@
     margin:0;
     box-shadow: rgba(0, 0, 0, 0.07) 0 2px 4px, 
                 rgba(0, 0, 0, 0.2) 0 0 0 1px inset;
-    } 
 
+    box-shadow: rgba(255,255,255,1) 0 0 0 4px
+
+    } 
     &.small {
       width: 50px;
       height: 50px * $eggratio;
