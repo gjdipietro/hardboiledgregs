@@ -37,7 +37,7 @@ include_once($head);
                 a look at my <a href="/resume/">resume</a>.                            
             </p>
             
-            <h2> Lets get cracking </h2>
+            <h2> Let's get cracking </h2>
             <p>
                 I'd love to share some of the interesting projects I've worked on, like that time I created a never ending supply of <a href="/work/You-Could-Use-A-Drink">whiskey</a>.
             </p>
