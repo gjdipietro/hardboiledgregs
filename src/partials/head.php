@@ -48,7 +48,6 @@
   })(document);
   </script>
 
-
   <!-- load production js and css -->
   <script>
     function loadJS(src) {"use strict";var ref = window.document.getElementsByTagName( "script" )[ 0 ];var script = window.document.createElement( "script" );script.src = src;ref.parentNode.insertBefore( script, ref );return script;}

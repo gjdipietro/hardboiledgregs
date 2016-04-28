@@ -9,7 +9,7 @@ include_once($head);
 
 <body class="showTime">
     <div class="curtain" id="curtain"></div>
-	<div class="container" >
+	     <div class="container" >
         <div class="header" id="header">
             <a href="/" class="eggatar">
     	      <img src="/assets/img/hi.jpg" alt="Meet Greg" />
@@ -25,9 +25,9 @@ include_once($head);
     	      <li><a href="https://www.linkedin.com/pub/greg-dipietro/4/700/439"  title="View on Linkedin" class="icon-linkedin"></a></li>
     	      <li><a href="https://www.facebook.com/gjdipietro" title="View on Facebook" class="icon-facebook"></a></li>
     	    </ul>
-    	</div>
+    	 </div>
 
-    	<div class="typographic_content" data-role="main" id="main">
+    	 <div class="typographic_content" data-role="main" id="main">
             <p>
                 I believe the web we build should be versatile and efficient, kind of like an egg. 
                 I'm Greg DiPietro, a web designer and front end developer. 
@@ -85,7 +85,7 @@ include_once($head);
                 Hope we can chat more about these projects and any others soon.
                 <a href="http://youcoulduseadrink.com/#/drink/-JmiH202_SlerQ3qaJ5k/1">First one is on me.</a>
             </p>
-        </div>
+       </div>
 	</div>
 
 </body>

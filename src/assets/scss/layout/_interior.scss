@@ -61,10 +61,9 @@
   	margin-top: rhythm(2);
  	padding: rhythm(.5);
  	text-align: center;
- 	
  	h4 {
  		margin: 0;
- 		@include adjust-font-size-to(12px);
+ 		@include adjust-font-size-to(14px);
  		color: $copy_light;
  		font-weight: 500;
  	}

@@ -1,23 +1,28 @@
+'use strict';
 
-var animation = false,
-    animationstring = 'animation',
-    keyframeprefix = '',
-    domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
-    pfx  = '',
-    elm = document.createElement('div');
+/*========================================
+REGISTER ANIMATIONS
+=========================================*/
+(function() {
+	var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+	var footer = document.querySelectorAll(".footer_interior");
+	var rootElm = document.getElementsByTagName( 'html' )[0];
+	var footerPos;
 
-if( elm.style.animationName !== undefined ) {
-	function myScript(){
-	    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-	    var footer = document.querySelectorAll(".footer_interior");
-	    var footerPos = footer[0].getBoundingClientRect().top;
-	    if(footerPos < scrollY) {
-	      footer[0].className = "footer_interior in_view";
-	    } else {
-	      footer[0].className = "footer_interior";
-	    }
+	if (document.createElement('div').style.animationName !== undefined && footer.length) {
+		window.addEventListener("scroll", animateFooter);
+		rootElm.className += ' hasCssAnimation';
 	}
-	window.addEventListener("scroll", myScript);
-	var root = document.getElementsByTagName( 'html' )[0];
-	root.className += ' hasCssAnimation';
-}
+
+	function animateFooter() {
+		scrollY = window.pageYOffset || document.documentElement.scrollTop;
+		footerPos = footer[0].getBoundingClientRect().top;
+
+		if(footerPos < scrollY) {
+		  footer[0].className = "footer_interior in_view";
+		} 
+		else {
+		  footer[0].className = "footer_interior";
+		}
+	}
+})();
