@@ -9,10 +9,6 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         '/',
-<<<<<<< HEAD
-=======
-        '/work/',
->>>>>>> 1d2becc34e31be5462d51f7b52c55a30931a30da
         '/resume',
         'assets/img/work/profile.png',
         'assets/img/work/manage.png',
@@ -32,13 +28,8 @@ self.addEventListener('install', e => {
         'assets/img/work/payments.png',
         'assets/img/square_bg.png',
         'assets/img/curves.png',
-<<<<<<< HEAD
         'assets/img/hi.jpg',
         'assets/img/hi-small.jpg',
-=======
-        'assets/img/hi.png',
-        'assets/img/hi-small.png',
->>>>>>> 1d2becc34e31be5462d51f7b52c55a30931a30da
         'assets/css/icons.data.svg.css',
         'assets/css/styles.css',
         'assets/js/production.min.js'
