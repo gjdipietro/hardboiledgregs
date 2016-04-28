@@ -75,10 +75,10 @@ $RECYCLE.BIN/
 #############
 ## Grunt
 #############
-
+build
 node_modules
 Gruntfile.js
-
+.gitignore
 
 
 #############
