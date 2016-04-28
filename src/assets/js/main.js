@@ -1,5 +1,6 @@
 'use strict';
 
+
 /*========================================
 REGISTER ANIMATIONS
 =========================================*/
@@ -25,4 +26,4 @@ REGISTER ANIMATIONS
 		  footer[0].className = "footer_interior";
 		}
 	}
-})();
+}());
