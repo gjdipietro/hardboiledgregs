@@ -215,8 +215,8 @@ module.exports = function(grunt) {
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['php:server', 'watch']); //everyday work
     grunt.registerTask('livetest', ['criticalcss', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'php:live']); // test the build
-    grunt.registerTask('build', ['php:server', 'smushit', 'criticalcss', 'htmlmin', 'autoprefixer', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'ftp-deploy']); //build it.
-    grunt.registerTask('ftps', ['ftp-deploy']); //just ftp it up
+    grunt.registerTask('build', ['php:server', 'smushit', 'criticalcss', 'htmlmin', 'autoprefixer', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'ftps_deploy']); //build it.
+    grunt.registerTask('ftps', ['ftps_deploy']); //just ftp it up
     grunt.registerTask('critical', ['criticalcss']);
 
     // grunt connect << use that to spin the server up
