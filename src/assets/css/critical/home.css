@@ -1,0 +1,58 @@
+.clearfix::before, .clearfix::after{ content: ' '; display: table; }
+.clearfix::after{ clear: both; }
+.clearfix{ }
+html{ font-size: 16px; line-height: 1.5em; }
+*{ box-sizing: border-box; }
+body{ background-color: rgb(255, 255, 255); background-image: url(/assets/img/curves.png); background-attachment: fixed; font-family: ff-tisa-web-pro, Georgia, serif; color: rgb(56, 52, 28); }
+img{ max-width: 100%; }
+a{ color: rgb(65, 183, 216); text-decoration: none; white-space: nowrap; }
+.container{ margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding-top: 0px; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; }
+@media (min-width: 48em){
+.container{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+}
+@media (min-width: 65em){
+.container{ max-width: 65em; }
+}
+html{ font-family: sans-serif; }
+body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+a{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; background-position: initial initial; background-repeat: initial initial; }
+h1{ font-size: 2em; margin-top: 0.67em; margin-right: 0px; margin-bottom: 0.67em; margin-left: 0px; }
+img{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
+html{ font-size: 100%; line-height: 1.8em; }
+@media screen and (min-width: 65em){
+html{ font-size: 120%; }
+}
+h1, h2, h3{ font-family: futura-pt, sans-serif; font-weight: 700; }
+h1{ margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 2em; line-height: 1.125em; }
+h2{ margin-top: 0px; margin-right: 0px; margin-bottom: 0.375em; margin-left: 0px; font-size: 1.75em; line-height: 1.28571em; }
+h3{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 1.25em; line-height: 1.2em; font-weight: 500; }
+.typographic_content{ margin-top: 0px; margin-right: auto; margin-bottom: 2.25em; margin-left: auto; max-width: 35em; }
+p, ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; }
+.accent{ color: rgb(244, 182, 74); }
+.header{ padding-top: 2em; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; text-align: center; position: static; max-width: none; margin-bottom: 1.5em; margin-left: auto; margin-right: auto; }
+.header h1{ margin-top: 0.375em; margin-right: 0px; margin-bottom: 0.375em; margin-left: 0px; }
+.header .tagline{ font-size: 1.25em; line-height: 1.2em; margin-top: 0px; margin-right: auto; margin-bottom: 0.75em; margin-left: auto; }
+.social{ list-style-type: none; list-style-position: initial; list-style-image: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: auto; margin-bottom: 1.5em; margin-left: auto; text-align: center; }
+.social::before, .social::after{ content: ''; display: table; }
+.social::after{ clear: both; }
+.social li{ display: inline; margin-top: 0px; margin-right: 0.25em; margin-bottom: 0px; margin-left: 0.25em; }
+.social a[class*="icon"]{ background-color: rgb(50, 71, 92); background-size: contain; border-top-left-radius: 50% 60%; border-top-right-radius: 50% 60%; border-bottom-right-radius: 50% 40%; border-bottom-left-radius: 50% 40%; display: inline-block; opacity: 0.5; width: 30px; height: 42.85714px; vertical-align: middle; background-position: 0px 50%; }
+.curtain{ background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(50, 71, 92); background-image: url(/assets/img/square_bg.png); position: absolute; top: 0px; left: 0px; right: 0px; height: 200px; background-position: initial initial; background-repeat: repeat repeat; }
+.eggatar{ position: relative; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; text-align: center; display: block; width: 150px; height: 214.28571px; }
+.eggatar img{ width: 100%; height: 100%; border-top-left-radius: 50% 60%; border-top-right-radius: 50% 60%; border-bottom-right-radius: 50% 40%; border-bottom-left-radius: 50% 40%; }
+.eggatar::after{ border-top-left-radius: 50% 60%; border-top-right-radius: 50% 60%; border-bottom-right-radius: 50% 40%; border-bottom-left-radius: 50% 40%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px; content: ''; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px; }
+.module_grid{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-bottom: 1.5em; }
+.module_grid li{ margin-bottom: 1.5em; }
+.module_grid li a{ background-image: none; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.199219) 0px 1px 3px 0px; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; display: block; position: relative; text-decoration: none; background-position: 0% 0%; background-repeat: repeat repeat; }
+.module_grid li img{ display: block; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; }
+.module_grid li .grid_title{ display: none; }
+@media screen and (min-width: 48em){
+.module_grid li a{ padding-top: 1em; padding-right: 1em; padding-bottom: 0px; padding-left: 1em; }
+.module_grid li .grid_title{ display: block; padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; color: rgb(102, 102, 102); font-size: 0.875em; line-height: 1.71429em; }
+.module_grid li .grid_title p{ color: rgb(153, 153, 153); font-family: futura-pt, sans-serif; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
+.module_grid li .grid_title h3{ font-size: 1rem; }
+}
+@media screen and (min-width: 27.5em){
+.module_grid li{ float: left; width: 48%; margin-top: 0px; margin-right: 0.75em; margin-bottom: 0.75em; margin-left: 0px; }
+.module_grid li:nth-child(2n){ margin-right: 0px; }
+}

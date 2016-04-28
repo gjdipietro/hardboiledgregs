@@ -1,0 +1,97 @@
+.module_grid {
+    @include reset-ul();
+    margin-bottom: rhythm(1);
+    li {
+        margin-bottom: rhythm(1);
+        a {
+            background: none repeat scroll 0% 0% #FFF;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            padding: 0;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            &:hover {
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+                .grid_title {
+                    color: darken($copy, 5%);
+                }
+            }
+        }
+        img {
+            display: block;
+            border-radius: 4px;
+        }
+        .grid_title {
+            display: none;
+        }
+        @media screen and (min-width: $bp_left_side) {
+            a {
+                padding: 1em 1em 0 1em;
+            }
+            .grid_title {
+                display: block;
+                padding: 1em 0;
+                color: $copy_light;
+                @include adjust_font_size_to(14px);
+                p {
+                    color: $copy_ultra_light;
+                    font-family: $san_serif;
+                    margin: 0;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+            } 
+        }
+    }
+
+    @media screen and (min-width: 27.5em) {
+        li {
+            float:left;
+            width: 48%;
+            margin: 0  rhythm(.5) rhythm(.5) 0;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+
+.module_ListBorder {
+    list-style: none;
+    @include reset_ul();
+    margin-top: rhythm(.25);
+    margin-bottom: rhythm(1);
+    li {
+        border-left: 1px solid #DDD;
+        float: none;
+        margin-bottom: 0;
+        padding-left: $unit;
+        width: auto;
+    }
+}
+
+.module_tags {
+    @include reset-ul();
+    padding: 0;
+    margin: 0;
+    .tags_tag {
+        background: $blue;
+        @include border-radius(1em);
+        color: $white;
+        display: inline-block;
+        font-family: $san_serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 11.8999996185303px;
+        margin: 0 $unit/2 $unit/2 0;
+        padding:  $unit/2 $unit;
+        position: relative;
+        text-align: center;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+}

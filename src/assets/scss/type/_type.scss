@@ -1,0 +1,65 @@
+html {
+    font-size: 100%;
+    line-height: 1.8em; 
+	@media screen and (min-width : $bp_full_size) {
+    	font-size: 120%;
+	}
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+	font-family: $san_serif;
+	font-weight: 700;
+}
+h1, .h1 {
+	margin: 0 0 rhythm(1) 0;	
+	@include adjust-font-size-to($h1-fz);
+}
+h2, .h2 {
+  	margin: 0 0 rhythm(.25) 0;	
+	@include adjust-font-size-to($h2-fz);
+}
+h3, .h3 {
+    margin: 0 0 0 0;	
+	@include adjust-font-size-to($h3-fz);
+	font-weight: 500;
+}
+h4, .h4 {
+  	margin: 0 0 0 0;	
+  	@include adjust-font-size-to($h4-fz);
+  	font-weight: 500;
+}
+h5, .h5 {
+    margin: 0 0 0 0;	
+	@include adjust-font-size-to($h5-fz);
+	font-weight: 500;
+}
+h6, .h6 {
+  	margin: 0 0 0 0;	
+  	@include adjust-font-size-to($h6-fz);
+  	font-weight: 500;
+}
+
+.typographic_content {
+	margin: 0 auto rhythm(1.5) auto;
+	max-width: 35em;
+}
+
+p, ol, ul, code, blockquote, figure {
+	margin: 0 0 rhythm(1) 0;
+	&.last {
+		margin-bottom:0;
+	}	
+}
+
+.accent { 
+	color: $accent;
+}
+
+h1 + .caption, .h1 + .caption {
+	margin-top: -2.75em;
+}
+h2 + .caption, .h2 + .caption {
+	margin-top: -1em;
+}
+
+

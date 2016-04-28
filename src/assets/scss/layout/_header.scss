@@ -1,0 +1,67 @@
+.header {
+    padding: 2em 0 0;
+    text-align: center;
+    position:static;
+    max-width: none;
+    margin-bottom:rhythm(1);
+    margin-left: auto;
+    margin-right: auto;
+  	h1 {
+    	margin: rhythm(.25) 0;
+  	}
+  	.tagline {
+    	@include adjust-font-size-to($h3-fz);
+    	margin: 0 auto rhythm(.5) auto;
+  	}
+}
+
+.social {
+    @include reset-ul();
+    @include clearfix();
+    margin: 0 auto 1.5em auto;
+    text-align: center;
+    li {
+    	display: inline;
+      margin: 0 .25em;
+    }
+    a[class*="icon"] {
+  		background-color: $blue;
+  		background-size: contain;
+  		border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;      
+  		background-position: 0;
+  		display: inline-block;
+  		opacity:.5;
+  		width: 30px;
+  		height: 30px * $eggratio;
+  		vertical-align: middle;
+  		&:hover {
+  			opacity: 1;
+  		}
+  		&:hover[class*="twitter"] {
+  			background-color: $twitter; 
+  		}
+  		&:hover[class*="facebook"] {
+  			background-color: $facebook; 
+  		}
+  		&:hover[class*="linkedin"] {
+  			background-color: $linkedin; 
+  		}
+  		&:hover[class*="github"] {
+  			background-color: $github; 
+  		}
+    }
+}
+
+
+.curtain {
+    background: $blue;
+    background-image: url('/assets/img/square_bg.png');
+    background-repeat: repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 200px;
+}
+
+

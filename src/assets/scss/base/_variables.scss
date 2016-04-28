@@ -1,0 +1,58 @@
+/*fonts*/
+$san_serif: "futura-pt", sans-serif;
+$serif: "ff-tisa-web-pro", Georgia, serif; 
+
+
+
+/*colors*/
+$copy: #38341C;
+$copy_light: #666;
+$copy_ultra_light: #999;
+$accent: #F4B64A;
+$blue: #32475C;
+$white: #FFF;
+$background: #F9F8F3;
+$grey: #EEE;
+$grey_dark: #DDD;
+
+
+$color_link: #41b7d8;
+$color_link_hover: darken($color_link, 10%);
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #007bb6;
+$github: #4183c4;
+
+/*type*/
+$base_font-size: 16px;
+$base-line-height: 24px;
+$rhythm-unit: "rem";
+$rem-with-px-fallback: true;
+$round-to-nearest-half-line: true;
+@include establish-baseline;
+$h1-fz: 32px;
+$h2-fz: 28px;
+$h3-fz: 20px;
+$h4-fz: 18px;
+$h5-fz: 16px;
+$h6-fz: 16px;
+
+
+/*spacing*/
+$unit:16px;
+$unitneg: -16px;
+
+/*z index */
+$global_nav_z: 100;
+
+
+/* container */
+$max_container: 65em;
+
+/*break points */
+$bp_left_side: 48em;
+$bp_full_size: 65em;
+
+
+$eggratio: 1.42857142857;

@@ -1,0 +1,9 @@
+.module_figure {
+	text-align: center;
+	figcaption {
+		text-align: center;
+		color: $copy_ultra_light;
+		@include adjust-font-size-to(11px);
+		font-family: $san_serif;
+	}
+}

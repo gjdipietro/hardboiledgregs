@@ -1,0 +1,22 @@
+.module_btn {
+    padding: 0.5em 1em;
+    font-family: $san_serif;
+	font-weight: 500;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+    border: none;
+	&:hover {
+    	text-decoration: none;
+    }
+
+    &.btn_primary {
+    	background-color: lighten($blue, 5%);
+    	color: $white;
+    	&:hover {
+			background-color: darken($blue, 5%);
+			color: $white;
+    	}
+    }
+    
+}
+
