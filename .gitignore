@@ -76,7 +76,6 @@ $RECYCLE.BIN/
 ## Grunt
 #############
 node_modules
-.gitignore
 
 
 #############
