@@ -179,7 +179,26 @@ module.exports = function(grunt) {
                 dest: '/'
               }]
             }
-        }
+        },
+
+        'ftps_deploy': {
+            deploy: {
+              options: {
+                auth:{
+                    host: 'hardboiledgregs.com',
+                    port: 3000,
+                    authKey: 'key1',
+                    secure: true
+                },
+                silent:false
+              },
+              files: [{
+                expand: true,
+                src: 'build/',
+                dest: '/'
+              }]
+            }
+          }
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -196,7 +215,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-ftps-deploy');
-    
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['php:server', 'watch']); //everyday work
