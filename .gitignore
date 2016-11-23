@@ -75,9 +75,7 @@ $RECYCLE.BIN/
 #############
 ## Grunt
 #############
-build
 node_modules
-.gitignore
 
 
 #############
@@ -85,3 +83,9 @@ node_modules
 #############
 .ftppass
 .sass-cache
+
+
+#############
+## Build folder
+#############
+build/
