@@ -172,6 +172,25 @@ module.exports = function(grunt) {
                 src: 'build/',
                 dest: '/'
             }
+        },
+
+        'ftps_deploy': {
+            deploy: {
+              options: {
+                auth:{
+                    host: 'hardboiledgregs.com',
+                    port: 3000,
+                    authKey: 'key1',
+                    secure: true
+                },
+                silent:false
+              },
+              files: [{
+                expand: true,
+                src: ['build/'],
+                dest: '/'
+              }]
+            }
         }
     });
 
@@ -190,12 +209,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-ftp-deploy');
+    grunt.loadNpmTasks('grunt-ftps-deploy');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['php:server', 'watch']); //everyday work
     grunt.registerTask('livetest', ['criticalcss', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'php:live']); // test the build
-    grunt.registerTask('build', ['php:server', 'smushit', 'criticalcss', 'htmlmin', 'autoprefixer', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'ftp-deploy']); //build it.
-    grunt.registerTask('ftp', ['ftp-deploy']); //just ftp it up
+    grunt.registerTask('build', ['php:server', 'smushit', 'criticalcss', 'htmlmin', 'autoprefixer', 'clean:build', 'copy', 'clean:css', 'clean:js', 'htmlmin', 'ftps_deploy']); //build it.
+    grunt.registerTask('ftp', ['ftps_deploy']); //just ftp it up
     grunt.registerTask('critical', ['criticalcss']);
 
     // grunt connect << use that to spin the server up
